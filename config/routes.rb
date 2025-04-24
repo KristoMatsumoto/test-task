@@ -7,4 +7,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  
+  get '/fibonacci/:n', to: 'fibonacci#show'#, as: 'fibonacci'
+  get '/factorial/:n', to: 'factorials#show'#, as: 'factorials'
 end
